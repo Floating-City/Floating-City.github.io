@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enbo Wang · 个人主页</title>
-  <meta name="description" content="Enbo Wang (Floating-City) 的个人主页:医学图像分割、深度学习项目与联系方式。">
+  <title>王恩博 · 个人主页</title>
+  <meta name="description" content="王恩博 (Enbo Wang, Floating-City) 的个人主页:AI Agent、医学影像分割、强化学习项目与联系方式。">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👋</text></svg>">
 </head>
 <body>
 
   <nav class="nav">
-    <a class="nav-logo" href="#top">Enbo Wang</a>
+    <a class="nav-logo" href="#top">王恩博</a>
     <div class="nav-links">
       <a href="#about">关于</a>
       <a href="#skills">技能</a>
@@ -23,8 +23,8 @@
 
   <header id="top" class="hero">
     <p class="hero-hello">👋 你好,我是</p>
-    <h1 class="hero-name">Enbo Wang</h1>
-    <p class="hero-tagline">计算机科学学生 · 关注医学图像分割与深度学习</p>
+    <h1 class="hero-name">王恩博 <span class="hero-name-en">Enbo Wang</span></h1>
+    <p class="hero-tagline">人工智能硕士在读 · AI Agent / 医学影像分割 / 强化学习</p>
     <div class="hero-cta">
       <a class="btn btn-primary" href="#projects">看看我的项目</a>
       <a class="btn btn-ghost" href="https://github.com/Floating-City" target="_blank" rel="noopener">GitHub →</a>
@@ -36,10 +36,11 @@
     <section id="about" class="section">
       <h2>关于我</h2>
       <p>
-        我是一名计算机科学专业的学生,目前主要关注医学图像分割方向,
-        包括半监督学习(SSL4MIS)、3D 体数据分割基础模型(SAM-Med3D)
-        以及医学影像异常检测(AnoMed)等。
-        平时也做一些数值优化与迁移学习相关的课程项目和实验。
+        西交利物浦大学人工智能专业硕士在读,本科毕业于温州肯恩大学计算机科学与技术专业(辅修数学、生物信息)。
+        研究与项目覆盖 AI Agent、医学影像分析、强化学习路径规划与算法工程部署:
+        目前在长三角先进材料研究院实习,负责 3D 医疗影像分割与半监督学习研究;
+        也担任过软件工程与 AI 软件工程课程助教,熟悉 Git、Docker、CI/CD 等工程实践。
+        求职方向:AI DevOps / Agent 开发 / LLM 应用 / AI 算法工程师。
       </p>
     </section>
 
@@ -48,36 +49,70 @@
       <ul class="skill-list">
         <li>Python</li>
         <li>PyTorch</li>
-        <li>医学图像分割</li>
+        <li>LangChain / ReAct</li>
+        <li>MONAI</li>
+        <li>OpenCV</li>
         <li>半监督学习</li>
+        <li>强化学习 / DQN</li>
         <li>迁移学习</li>
-        <li>Jupyter Notebook</li>
         <li>Git</li>
-        <!-- 按需增删 -->
+        <li>Linux</li>
+        <li>Docker</li>
+        <li>CI/CD</li>
       </ul>
     </section>
 
     <section id="projects" class="section">
-      <h2>项目</h2>
+      <h2>项目经历</h2>
       <div class="project-grid">
 
+        <div class="project-card">
+          <h3>半监督医疗影像分割与标注辅助 Agent 系统</h3>
+          <p>
+            硕士课题。面向 3D 医疗影像器官与病灶分割,结合少量专家标注与大量未标注数据构建半监督分割系统;
+            并扩展为辅助 Agent,引入任务规划、结果解释、标注建议与高风险区域优先复核,提升人机协同质控效率。
+            支持 DICOM / NIfTI 处理与 Dice、IoU、不确定性评估。
+          </p>
+          <span class="project-meta">PyTorch · MONAI · 半监督学习 · Agent · 2025.12 至今</span>
+        </div>
+
+        <div class="project-card">
+          <h3>智能车载空调控制算法部署</h3>
+          <p>
+            某车企项目。负责基于随机森林的空调调节控制模块在车载 VDC 平台的部署:
+            环境配置、模型移植、输入输出边界保护与联调跟进,
+            让空调系统更贴合用户使用习惯,积累智能硬件场景下的算法工程落地经验。
+          </p>
+          <span class="project-meta">机器学习部署 · 随机森林 · 车载 VDC 平台 · 2026.05</span>
+        </div>
+
         <a class="project-card" href="https://github.com/Floating-City/Trajectory_Optimization_With_Transfer_Learning" target="_blank" rel="noopener">
-          <h3>Trajectory Optimization with Transfer Learning</h3>
-          <p>结合迁移学习的轨迹优化实验与实现。</p>
-          <span class="project-meta">Python</span>
+          <h3>多无人机协同路径规划算法</h3>
+          <p>
+            本科毕业课题,核心负责人。构建强化学习路径规划框架,以 DQN 处理连续状态空间下的路径决策,
+            引入迁移学习将已有场景知识迁移至新环境,显著降低训练成本;
+            通过分布式决策提升多智能体系统鲁棒性,成果以论文形式整理。
+          </p>
+          <span class="project-meta">强化学习 · DQN · 迁移学习 · 2024.09 – 2025.06</span>
         </a>
 
-        <a class="project-card" href="https://github.com/Floating-City/Final_Project_For_MATH-3790" target="_blank" rel="noopener">
-          <h3>Final Project for MATH-3790</h3>
-          <p>MATH-3790 课程期末项目,数据分析与可视化 Notebook。</p>
-          <span class="project-meta">Jupyter Notebook</span>
-        </a>
+        <div class="project-card">
+          <h3>穿山甲鳞片先天免疫适应性研究</h3>
+          <p>
+            成果已发表于 BMC Biology。从 ExoCarta 数据库提取并校验细胞外囊泡相关数据,
+            对蛋白质和 RNA 序列进行比对分析,并开发 Python 脚本实现数据处理与分析流程自动化。
+          </p>
+          <span class="project-meta">生物信息学 · Python 自动化 · 2024.04 – 2024.10</span>
+        </div>
 
-        <a class="project-card" href="https://github.com/Floating-City?tab=repositories" target="_blank" rel="noopener">
-          <h3>医学图像分割学习仓库</h3>
-          <p>SSL4MIS、SAM-Med3D、AnoMed 等医学图像分割方向的学习与复现记录。</p>
-          <span class="project-meta">Python</span>
-        </a>
+        <div class="project-card">
+          <h3>腾讯 LIGHT 公益创造营:植物种植识别</h3>
+          <p>
+            设计基于 CNN 的植物叶片图像识别系统,完成特征提取与分类,
+            并面向移动端场景进行模型轻量化处理。
+          </p>
+          <span class="project-meta">深度学习 · CNN · 图像分类 · 2024.01 – 2024.04</span>
+        </div>
 
       </div>
     </section>
@@ -86,14 +121,14 @@
       <h2>联系我</h2>
       <ul class="contact-list">
         <li>GitHub:<a href="https://github.com/Floating-City" target="_blank" rel="noopener">@Floating-City</a></li>
-        <li>邮箱:<a href="mailto:you@example.com">you@example.com</a></li>
+        <li>邮箱:<a href="mailto:15397352700@163.com">15397352700@163.com</a></li>
       </ul>
     </section>
 
   </main>
 
   <footer class="footer">
-    <p>© <span id="year"></span> Enbo Wang · 由 <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a> 托管</p>
+    <p>© <span id="year"></span> 王恩博 · 由 <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a> 托管</p>
   </footer>
 
   <script src="script.js"></script>
