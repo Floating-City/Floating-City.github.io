@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enbo Wang · 个人主页</title>
+  <meta name="description" content="Enbo Wang (Floating-City) 的个人主页:医学图像分割、深度学习项目与联系方式。">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👋</text></svg>">
+</head>
+<body>
+
+  <nav class="nav">
+    <a class="nav-logo" href="#top">Enbo Wang</a>
+    <div class="nav-links">
+      <a href="#about">关于</a>
+      <a href="#skills">技能</a>
+      <a href="#projects">项目</a>
+      <a href="#contact">联系</a>
+    </div>
+    <button id="theme-toggle" class="theme-toggle" aria-label="切换主题">🌙</button>
+  </nav>
+
+  <header id="top" class="hero">
+    <p class="hero-hello">👋 你好,我是</p>
+    <h1 class="hero-name">Enbo Wang</h1>
+    <p class="hero-tagline">计算机科学学生 · 关注医学图像分割与深度学习</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#projects">看看我的项目</a>
+      <a class="btn btn-ghost" href="https://github.com/Floating-City" target="_blank" rel="noopener">GitHub →</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="about" class="section">
+      <h2>关于我</h2>
+      <p>
+        我是一名计算机科学专业的学生,目前主要关注医学图像分割方向,
+        包括半监督学习(SSL4MIS)、3D 体数据分割基础模型(SAM-Med3D)
+        以及医学影像异常检测(AnoMed)等。
+        平时也做一些数值优化与迁移学习相关的课程项目和实验。
+      </p>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>技能</h2>
+      <ul class="skill-list">
+        <li>Python</li>
+        <li>PyTorch</li>
+        <li>医学图像分割</li>
+        <li>半监督学习</li>
+        <li>迁移学习</li>
+        <li>Jupyter Notebook</li>
+        <li>Git</li>
+        <!-- 按需增删 -->
+      </ul>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>项目</h2>
+      <div class="project-grid">
+
+        <a class="project-card" href="https://github.com/Floating-City/Trajectory_Optimization_With_Transfer_Learning" target="_blank" rel="noopener">
+          <h3>Trajectory Optimization with Transfer Learning</h3>
+          <p>结合迁移学习的轨迹优化实验与实现。</p>
+          <span class="project-meta">Python</span>
+        </a>
+
+        <a class="project-card" href="https://github.com/Floating-City/Final_Project_For_MATH-3790" target="_blank" rel="noopener">
+          <h3>Final Project for MATH-3790</h3>
+          <p>MATH-3790 课程期末项目,数据分析与可视化 Notebook。</p>
+          <span class="project-meta">Jupyter Notebook</span>
+        </a>
+
+        <a class="project-card" href="https://github.com/Floating-City?tab=repositories" target="_blank" rel="noopener">
+          <h3>医学图像分割学习仓库</h3>
+          <p>SSL4MIS、SAM-Med3D、AnoMed 等医学图像分割方向的学习与复现记录。</p>
+          <span class="project-meta">Python</span>
+        </a>
+
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>联系我</h2>
+      <ul class="contact-list">
+        <li>GitHub:<a href="https://github.com/Floating-City" target="_blank" rel="noopener">@Floating-City</a></li>
+        <li>邮箱:<a href="mailto:you@example.com">you@example.com</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Enbo Wang · 由 <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a> 托管</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
