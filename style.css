@@ -148,6 +148,26 @@ body {
 
 .project-meta { font-size: 13px; color: var(--text-dim); }
 
+/* 教育 / 经历条目 */
+.entry { margin-bottom: 24px; }
+.entry:last-child { margin-bottom: 0; }
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.entry-title { font-weight: 600; }
+.entry-date { color: var(--text-dim); font-size: 14px; white-space: nowrap; }
+
+.entry-detail { margin-top: 6px; }
+
+ul.entry-detail { padding-left: 20px; }
+ul.entry-detail li { margin: 4px 0; }
+
 .contact-list { list-style: none; }
 .contact-list li { margin: 8px 0; color: var(--text-dim); }
 .contact-list a { color: var(--accent); text-decoration: none; }
